@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>4_AD10 UNIVERSE</title>
+<meta name="description" content="4_AD10 UNIVERSE — عالم يحمل هويتي.">
+<meta name="theme-color" content="#050505">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@600;800&family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lock">
+
+<div id="intro">
+  <div class="glowline"></div>
+  <p class="i-id" id="iId">4_ad10</p>
+  <p class="i-nm" id="iNm">♚ 𝒜 𝐵 𝒟 𝒰 𝐿 𝐿 𝒜 𝐻 ♚</p>
+  <div class="i-btns" id="iBtns" hidden>
+    <button class="btn gold" id="enS">دخول بالصوت</button>
+    <button class="btn" id="enM">دخول صامت</button>
+  </div>
+</div>
+
+<div id="fx" aria-hidden="true"><i></i></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<header class="top">
+  <a class="brand" href="#home" data-go="home">4_AD10</a>
+  <nav class="nav" id="nav">
+    <a href="#home" data-go="home"><b>الرئيسية</b><small>HOME</small></a>
+    <a href="#works" data-go="works"><b>أعمالي</b><small>MY WORKS</small></a>
+    <a href="#quotes" data-go="quotes"><b>الاقتباسات</b><small>QUOTES</small></a>
+    <a href="#accounts" data-go="accounts"><b>الحسابات</b><small>SOCIAL</small></a>
+    <a href="#about" data-go="about"><b>من أنا</b><small>ABOUT</small></a>
+  </nav>
+  <button class="snd" id="snd" aria-label="تشغيل أو إيقاف الصوت" aria-pressed="false">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/><path class="off" d="m17 9 5 6M22 9l-5 6"/></svg>
+  </button>
+</header>
+
+<main id="stage">
+
+<section class="page" id="home">
+  <div class="hero">
+    <div class="rays" aria-hidden="true"></div>
+    <p class="crown">♚</p>
+    <h1 class="hid" data-split>4_ad10</h1>
+    <p class="gname">♚ 𝒜 𝐵 𝒟 𝒰 𝐿 𝐿 𝒜 𝐻 ♚</p>
+    <p class="lead">أهلاً بك في 4_AD10 UNIVERSE، موقعي الشخصي الذي أجمع فيه أعمالي واقتباساتي وحساباتي في مكان واحد.</p>
+    <div class="cta"><a class="btn gold" href="#quotes" data-go="quotes">مكتبة الاقتباسات</a><a class="btn" href="#accounts" data-go="accounts">حساباتي الرسمية</a></div>
+  </div>
+  <div class="wrap">
+    <h2 class="h2 rv">اختر وجهتك</h2>
+    <div class="grid5">
+      <a class="tile rv" href="#works" data-go="works"><span>MY WORKS</span><b>أعمالي</b></a>
+      <a class="tile rv" href="#quotes" data-go="quotes"><span>QUOTES</span><b>الاقتباسات</b></a>
+      <a class="tile rv" href="#accounts" data-go="accounts"><span>SOCIAL ACCOUNTS</span><b>الحسابات</b></a>
+      <a class="tile rv" href="#about" data-go="about"><span>ABOUT ME</span><b>من أنا</b></a>
+    </div>
+    <h2 class="h2 rv">من المكتبة</h2>
+    <div class="list" id="homeQuotes"></div>
+    <a class="more rv" href="#quotes" data-go="quotes">كل الاقتباسات ←</a>
+    <h2 class="h2 rv">من أعمالي</h2>
+    <div class="list works" id="homeWorks"></div>
+    <h2 class="h2 rv">حساباتي الرسمية</h2>
+    <div class="list accs" id="homeAcc"></div>
+  </div>
+</section>
+
+<section class="page" id="works"><div class="wrap">
+  <h1 class="h1" data-split>أعمالي</h1><p class="en">MY WORKS</p>
+  <div class="list works" id="worksList"></div>
+</div></section>
+
+<section class="page" id="quotes"><div class="wrap">
+  <h1 class="h1" data-split>♕ مكتبة الاقتباسات</h1><p class="en">QUOTES</p>
+  <div class="search"><input id="q" type="search" placeholder="ابحث باسم الشخصية أو بكلمة من الاقتباس" aria-label="بحث في الاقتباسات" autocomplete="off"><span id="qc"></span></div>
+  <div class="list" id="qList"></div>
+  <p class="none" id="qNone" hidden>لا توجد نتائج. جرّب كلمة أخرى أو اسم شخصية مختلفاً.</p>
+</div></section>
+
+<section class="page" id="accounts"><div class="wrap">
+  <h1 class="h1" data-split>الحسابات</h1><p class="en">SOCIAL ACCOUNTS</p>
+  <h2 class="h2 rv"><span class="tc">♛</span> حساباتي الرسمية <small>OFFICIAL ACCOUNTS</small></h2>
+  <div class="list accs" id="offList"></div>
+  <h2 class="h2 rv">حسابات الأصدقاء <small>FRIENDS</small></h2>
+  <div class="list accs friends" id="frList"></div>
+</div></section>
+
+<section class="page" id="about"><div class="wrap narrow">
+  <h1 class="h1" data-split>من أنا</h1><p class="en">ABOUT ME</p>
+  <div class="about rv">
+    <p class="crown">♚</p>
+    <p class="gname">♚ 𝒜 𝐵 𝒟 𝒰 𝐿 𝐿 𝒜 𝐻 ♚</p>
+    <p class="aid">4_ad10</p>
+    <p>أنا عبدالله، صاحب المعرّف 4_ad10.</p>
+    <p>4_AD10 UNIVERSE هو موقعي الشخصي: أعرض فيه أعمالي، وأجمع مقولات أحببتها، وأضع حساباتي الرسمية وحسابات أصدقائي.</p>
+    <a class="btn gold" href="#accounts" data-go="accounts">تابعني</a>
+  </div>
+  <p class="foot">© <span id="yr"></span> 4_AD10 UNIVERSE</p>
+</div></section>
+
+</main>
+
+<script src="data/quotes.js"></script>
+<script src="data/works.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
